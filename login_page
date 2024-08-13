@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(image/purpple01.jpg);
+        /*background-size:cover;*/
+        background-size: 100% 100%;
+        background-position: center center;
+        overflow: auto;
+    }
+    .login{
+        width: 550px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+        to right bottom,
+        rgba(255,255,255,.7),
+        rgba(255,255,255,.5),
+        rgba(255,255,255,.4)
+        );
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 20px #a29bfe;
+        border-radius: 15px;
+    }
+    .table{
+        font: 900 40px '';
+        text-align: center;
+        letter-spacing: 5px;
+        color: #3d3d3d;
+    }
+    .box{
+        overflow: hidden;
+    }
+    .box input{
+        width: 100%;
+        margin-bottom: 20px;
+        outline: none;
+        border: 0;
+        padding: 10px;
+        background-color: transparent;
+        border-bottom: 3px solid rgb(150,150,240);
+        font: 900 16px '';
+    }
+    .go{
+        text-align: center;
+        display: block;
+        height: 24px;
+        padding: 12px;
+        font: 900 20px '';
+        border-radius: 10px;
+        margin-top: 20px;
+        color: #fff;
+        letter-spacing: 3px;
+        background-image: linear-gradient(to left,#fd79a8,#a29bf6);
+    }
+    .watermark {
+        position: absolute; /* 绝对定位 */
+        bottom: 10px; /* 距离底部 10px */
+        right: 10px; /* 距离右侧 10px */
+        opacity: 0.05; /* 透明度设置为 5% */
+        font-size: 36px; /* 字体大小 */
+        color: #fff; /* 字体颜色 */
+        pointer-events: none; /* 防止水印干扰鼠标事件 */
+        user-select: none; /* 防止选中文本 */
+        z-index: 1000; /* 确保水印在其他元素上方 */
+        transform: rotate(-30deg); /* 旋转水印以增加不干扰性 */
+        white-space: nowrap; /* 防止文本换行 */
+    }
+</style>
+<body>
+    <div class="login">
+        <div class="box">
+            <p class="table">Login</p>
+            <br>
+            <input type="text" placeholder="账号">
+            <input type="password" placeholder="密码">
+            <br>
+            <a href="#" class="go">GO</a>
+        </div>
+    </div>
+    <div class="watermark">槿澜文化</div>
+</body>
+</html>
